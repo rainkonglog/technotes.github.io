@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1" theme-name="Stellar" theme-version="1.29.1">
-  <meta name="robots" content="none">
+  
   <meta name="generator" content="Hexo 7.3.0">
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="preconnect" href="https://unpkg.com" crossorigin>
@@ -17,20 +17,25 @@
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
   
-  <title>Rain</title>
+  <title>Centos SCL源 - Rain</title>
 
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Rain">
-<meta property="og:url" content="https://rainkong.net/404">
+    <meta name="description" content="Centos用yum安装scl下报错，备忘一下更换源。 yum -y update Loaded plugins: fastestmirror Loading mirror speeds from cached hostfile Could not retrieve mirrorlist http:&#x2F;&#x2F;mirrorlist.centos.org?arch&#x3D;x86_64&amp;release&#x3D;7&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Centos SCL源">
+<meta property="og:url" content="https://rainkong.net/Centos-scl/">
 <meta property="og:site_name" content="Rain">
+<meta property="og:description" content="Centos用yum安装scl下报错，备忘一下更换源。 yum -y update Loaded plugins: fastestmirror Loading mirror speeds from cached hostfile Could not retrieve mirrorlist http:&#x2F;&#x2F;mirrorlist.centos.org?arch&#x3D;x86_64&amp;release&#x3D;7&amp;">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-09-23T05:36:00.000Z">
+<meta property="article:modified_time" content="2024-09-23T09:13:23.875Z">
 <meta property="article:author" content="Rain">
+<meta property="article:tag" content="centos">
 <meta name="twitter:card" content="summary">
   
   
   
-  
+  <meta name="keywords" content="centos">
 
   <!-- feed -->
   
@@ -47,7 +52,7 @@
 </head>
 <body>
 
-<div class="l_body s:aa index tech" id="start" layout="404" ><aside class="l_left"><div class="leftbar-container">
+<div class="l_body s:aa content tech" id="start" layout="post" ><aside class="l_left"><div class="leftbar-container">
 
 
 <header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/images/logo.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">Rain</div></a></div></header>
@@ -59,28 +64,66 @@
 <nav class="menu dis-select"><a class="nav-item active" title="大杂烩" href="/" style="color:#1BCDFC"><img no-lazy src="/images/home.svg" / onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="nav-item" title="技术整理" href="/wiki/" style="color:#3DC550"><img no-lazy src="/images/tech.svg" / onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="nav-item" title="记忆" href="/photo/" style="color:#F44336"><img no-lazy src="/images/photo.svg" / onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="nav-item" title="生活" href="/life/" style="color:#F44336"><img no-lazy src="/images/life.svg" / onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a></nav>
 </div>
 <div class="widgets">
+
+
 <widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/Redis-cluster/"><span class="title">Redis集群</span></a><a class="item title" href="/Centos-scl/"><span class="title">Centos SCL源</span></a><a class="item title" href="/Java-annotation/"><span class="title">Java的注解</span></a><a class="item title" href="/java-hello-world/"><span class="title">Java的学习</span></a><a class="item title" href="/java-reflection/"><span class="title">Java的反射</span></a><a class="item title" href="/test-tech-1/"><span class="title">112334666</span></a><a class="item title" href="/112334/"><span class="title">112334</span></a><a class="item title" href="/hello-world/"><span class="title">Hello World</span></a></div></widget>
-
-
 </div>
 
 </div></aside><div class="l_main" id="main">
 
 
 
-<article class='md-text error-page'>
-  <h1><img id='error' src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/404/1c830bfcd517d.svg' alt='404'></h1>
-  <p class='what'>
-    <strong>
-      很抱歉，您访问的页面不存在
-    </strong>
-  </p>
-  <p class='why'>
-    可能是输入地址有误或该地址已被删除
-  </p>
-  <br><br>
-  <a class='button' id='back' href="/">返回主页</a>
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/centos/">centos</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-09-23T05:36:00.000Z">2024-09-23</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-09-23T09:13:23.875Z">2024-09-23</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>Centos SCL源</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><p>Centos用yum安装scl下报错，备忘一下更换源。</p>
+<pre><code>yum -y update
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+Could not retrieve mirrorlist http://mirrorlist.centos.org?arch=x86_64&amp;release=7&amp;repo=sclo-rh error was
+14: curl#6 - &quot;Could not resolve host: mirrorlist.centos.org; Unknown error&quot;
+</code></pre>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>CentOS7的SCL源在2024年6月30日停止维护了。 当scl源里面默认使用了centos官方的地址，无法连接，需要替换为其它源。</p>
+<h2 id="替换为阿里的源"><a href="#替换为阿里的源" class="headerlink" title="替换为阿里的源"></a>替换为阿里的源</h2><h3 id="重命名原来的文件："><a href="#重命名原来的文件：" class="headerlink" title="重命名原来的文件："></a>重命名原来的文件：</h3><pre><code>mv CentOS-SCLo-scl.repo CentOS-SCLo-scl.repo-bak
+mv CentOS-SCLo-scl-rh.repo CentOS-SCLo-scl-rh.repo-bak
+</code></pre>
+<h3 id="创建新的源文件"><a href="#创建新的源文件" class="headerlink" title="创建新的源文件"></a>创建新的源文件</h3><pre><code>vim CentOS-SCLo-scl-rh.repo
+</code></pre>
+<h3 id="写入"><a href="#写入" class="headerlink" title="写入"></a>写入</h3><pre><code>[centos-sclo-rh]
+name=CentOS-7 - SCLo rh
+baseurl=https://mirrors.aliyun.com/centos/7/sclo/x86_64/rh/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
+</code></pre>
+<h2 id="改用新的源"><a href="#改用新的源" class="headerlink" title="改用新的源"></a>改用新的源</h2><pre><code>yum -y update
+</code></pre>
+
+<div class="article-footer fs14">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    </div>
 </article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/Redis-cluster/">Redis集群</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/Java-annotation/">Java的注解</a></div></section></div>
+
+
 
 
 
@@ -88,7 +131,14 @@
 <footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">Rain</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1">Stellar 1.29.1</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-</aside><div class='float-panel blur'>
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E5%9B%A0"><span class="toc-text">原因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%BF%E6%8D%A2%E4%B8%BA%E9%98%BF%E9%87%8C%E7%9A%84%E6%BA%90"><span class="toc-text">替换为阿里的源</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%91%BD%E5%90%8D%E5%8E%9F%E6%9D%A5%E7%9A%84%E6%96%87%E4%BB%B6%EF%BC%9A"><span class="toc-text">重命名原来的文件：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%B0%E7%9A%84%E6%BA%90%E6%96%87%E4%BB%B6"><span class="toc-text">创建新的源文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%99%E5%85%A5"><span class="toc-text">写入</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%94%B9%E7%94%A8%E6%96%B0%E7%9A%84%E6%BA%90"><span class="toc-text">改用新的源</span></a></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
