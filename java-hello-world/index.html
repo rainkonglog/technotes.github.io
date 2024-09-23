@@ -20,15 +20,15 @@
   <title>Java的学习 - Rain</title>
 
   
-    <meta name="description" content="Java并不算是一个好学的语言，感觉主要原因是：      1. 思维的转变，比如面向对象；     2. 配置复杂，虽然现在一些配置尽可能简单，对于初学者还是没有达到开箱即用的地步；     3. 及时反馈，这点相对于一些前端语言，可以及时的看到效果；     4. 扩展性强，导致要了解学习的内容过多。  面向对象Java和其它语言很大一个不同就是面向对象。理解类和对象基本就行了，比如人是一个类">
+    <meta name="description" content="Java并不算是一个好学的语言，感觉主要原因是：    1. 思维的转变，比如面向对象；    2. 配置复杂，虽然现在一些配置尽可能简单，对于初学者还是没有达到开箱即用的地步；    3. 及时反馈，这点相对于一些前端语言，可以及时的看到效果；    4. 扩展性强，导致要了解学习的内容过多。  面向对象Java和其它语言很大一个不同就是面向对象。理解类和对象基本就行了，比如人是一个类，具体张">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java的学习">
 <meta property="og:url" content="https://rainkong.net/java-hello-world/">
 <meta property="og:site_name" content="Rain">
-<meta property="og:description" content="Java并不算是一个好学的语言，感觉主要原因是：      1. 思维的转变，比如面向对象；     2. 配置复杂，虽然现在一些配置尽可能简单，对于初学者还是没有达到开箱即用的地步；     3. 及时反馈，这点相对于一些前端语言，可以及时的看到效果；     4. 扩展性强，导致要了解学习的内容过多。  面向对象Java和其它语言很大一个不同就是面向对象。理解类和对象基本就行了，比如人是一个类">
+<meta property="og:description" content="Java并不算是一个好学的语言，感觉主要原因是：    1. 思维的转变，比如面向对象；    2. 配置复杂，虽然现在一些配置尽可能简单，对于初学者还是没有达到开箱即用的地步；    3. 及时反馈，这点相对于一些前端语言，可以及时的看到效果；    4. 扩展性强，导致要了解学习的内容过多。  面向对象Java和其它语言很大一个不同就是面向对象。理解类和对象基本就行了，比如人是一个类，具体张">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-09-20T07:36:00.000Z">
-<meta property="article:modified_time" content="2024-09-20T08:03:21.685Z">
+<meta property="article:modified_time" content="2024-09-23T03:24:49.778Z">
 <meta property="article:author" content="Rain">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
@@ -66,7 +66,7 @@
 <div class="widgets">
 
 
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/java-reflection/"><span class="title">Java的反射</span></a><a class="item title" href="/java-hello-world/"><span class="title">Java的学习</span></a><a class="item title" href="/test-tech-1/"><span class="title">112334666</span></a><a class="item title" href="/112334/"><span class="title">112334</span></a><a class="item title" href="/hello-world/"><span class="title">Hello World</span></a></div></widget>
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/Java-annotation/"><span class="title">Java的注解</span></a><a class="item title" href="/java-hello-world/"><span class="title">Java的学习</span></a><a class="item title" href="/java-reflection/"><span class="title">Java的反射</span></a><a class="item title" href="/test-tech-1/"><span class="title">112334666</span></a><a class="item title" href="/112334/"><span class="title">112334</span></a><a class="item title" href="/hello-world/"><span class="title">Hello World</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -79,7 +79,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-09-20T07:36:00.000Z">2024-09-20</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-09-20T08:03:21.685Z">2024-09-20</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-09-20T07:36:00.000Z">2024-09-20</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-09-23T03:24:49.778Z">2024-09-23</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -90,12 +90,9 @@
     </div>
     
   </div>
-  </div><article class="md-text content"><pre><code>Java并不算是一个好学的语言，感觉主要原因是： 
-    1. 思维的转变，比如面向对象；
-    2. 配置复杂，虽然现在一些配置尽可能简单，对于初学者还是没有达到开箱即用的地步；
-    3. 及时反馈，这点相对于一些前端语言，可以及时的看到效果；
-    4. 扩展性强，导致要了解学习的内容过多。
-</code></pre>
+  </div><article class="md-text content"><blockquote>
+<p>Java并不算是一个好学的语言，感觉主要原因是：<br>    1. 思维的转变，比如面向对象；<br>    2. 配置复杂，虽然现在一些配置尽可能简单，对于初学者还是没有达到开箱即用的地步；<br>    3. 及时反馈，这点相对于一些前端语言，可以及时的看到效果；<br>    4. 扩展性强，导致要了解学习的内容过多。</p>
+</blockquote>
 <h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><p>Java和其它语言很大一个不同就是面向对象。理解类和对象基本就行了，比如人是一个类，具体张三是人这个类的对象，李四是人这类的另一个对象；动物是一个类，猫是动物的一个对象，狗是动物的另一个对象。 张三具有行走的方法，猫也具有行走的方法。 简单理解面向过程和面向对象的方式就是： 面向过程就是从第一行依次执行到最后一行； 面向对象是把现实问题抽象出来，把某一类定义为一个类，类具有它自己的方法。</p>
 <h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><p>很多语言都会有一些设计模式，或者说语言在设计的时候本来就有很多设计的模式在里面，只是感觉Java把这些凸显的更加明显。想要理解一些代码，掌握编程的思想，设计的模式是必不可少的。比如 <code>单例模式</code>、<code>工厂模式</code>、<code>接口适配器模式</code>、<code>策略模式</code> 等等。  </p>
 <p>这些模式没必要完全记住其概念，但是一定要熟悉了解，主要还是在于思维的转变，从平常日常生活思考问题的思维转变成编程思维。其实有时候很多设计模式在用，自己却浑然不知。</p>
