@@ -1499,7 +1499,9 @@ div.toast.show {
   font-size: 3rem;
 }
 .page-footer {
-  margin: 4rem 1rem 3rem;
+  text-align: center;
+  margin: 0.3rem auto;
+  padding-bottom: 0.2rem;
   color: var(--text-p2);
 }
 .page-footer a {
@@ -5008,7 +5010,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 }
 .l_left {
   margin: 8px;
-  height: calc(100vh - 16px);
+  height: calc(100vh - 96px);
   border-radius: 16px;
   overflow: hidden;
   overflow: clip;
@@ -6037,7 +6039,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 .l_body {
   display: grid;
   grid-template-columns: 1fr minmax(200px, var(--width-main)) 1fr;
-  grid-gap: var(--gap-margin);
+  grid-gap: 0.1rem var(--gap-margin);
   margin: auto;
   font-size: var(--fsp);
 }
