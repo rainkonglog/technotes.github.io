@@ -1722,7 +1722,6 @@ div.toast.show {
 }
 .related-wrap {
   padding: 0 1rem;
-  margin: 4rem 0;
 }
 .related-wrap:empty {
   display: none;
@@ -6409,7 +6408,6 @@ details.toc[open] >div.body section .header+.doc_tree {
 }
 .l_main {
   position: relative;
-  padding-bottom: var(--gap-max);
 }
 @media screen and (min-width: 667px) {
   .l_main {
