@@ -17,25 +17,25 @@
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
   
-  <title>Java的学习 - Rain</title>
+  <title>Centos SCL源 - Rain</title>
 
   
-    <meta name="description" content="Java并不算是一个好学的语言，感觉主要原因是：    1. 思维的转变，比如面向对象；    2. 配置复杂，虽然现在一些配置尽可能简单，对于初学者还是没有达到开箱即用的地步；    3. 及时反馈，这点相对于一些前端语言，可以及时的看到效果；    4. 扩展性强，导致要了解学习的内容过多。  面向对象Java和其它语言很大一个不同就是面向对象。理解类和对象基本就行了，比如人是一个类，具体张">
+    <meta name="description" content="Centos用yum安装scl下报错，备忘一下更换源。 yum -y update Loaded plugins: fastestmirror Loading mirror speeds from cached hostfile Could not retrieve mirrorlist http:&#x2F;&#x2F;mirrorlist.centos.org?arch&#x3D;x86_64&amp;release&#x3D;7&amp;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java的学习">
-<meta property="og:url" content="https://rainkong.net/java-hello-world/">
+<meta property="og:title" content="Centos SCL源">
+<meta property="og:url" content="https://rainkong.net/2024-09-23-Centos-scl_%E5%89%AF%E6%9C%AC3">
 <meta property="og:site_name" content="Rain">
-<meta property="og:description" content="Java并不算是一个好学的语言，感觉主要原因是：    1. 思维的转变，比如面向对象；    2. 配置复杂，虽然现在一些配置尽可能简单，对于初学者还是没有达到开箱即用的地步；    3. 及时反馈，这点相对于一些前端语言，可以及时的看到效果；    4. 扩展性强，导致要了解学习的内容过多。  面向对象Java和其它语言很大一个不同就是面向对象。理解类和对象基本就行了，比如人是一个类，具体张">
+<meta property="og:description" content="Centos用yum安装scl下报错，备忘一下更换源。 yum -y update Loaded plugins: fastestmirror Loading mirror speeds from cached hostfile Could not retrieve mirrorlist http:&#x2F;&#x2F;mirrorlist.centos.org?arch&#x3D;x86_64&amp;release&#x3D;7&amp;">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-09-20T07:36:00.000Z">
-<meta property="article:modified_time" content="2024-09-23T03:24:49.778Z">
+<meta property="article:published_time" content="2024-09-23T05:36:00.000Z">
+<meta property="article:modified_time" content="2024-09-30T10:03:05.084Z">
 <meta property="article:author" content="Rain">
-<meta property="article:tag" content="java">
+<meta property="article:tag" content="centos">
 <meta name="twitter:card" content="summary">
   
   
   
-  <meta name="keywords" content="java">
+  <meta name="keywords" content="centos">
 
   <!-- feed -->
   
@@ -66,7 +66,7 @@
 <div class="widgets">
 
 
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/Centos-scl_%E5%89%AF%E6%9C%AC3/"><span class="title">Centos SCL源</span></a><a class="item title" href="/Spring-boot-mysql/"><span class="title">Spring boot 集成Mysql</span></a><a class="item title" href="/Spring-boot-shardingsphere/"><span class="title">Spring Boot Shardingsphere 分表</span></a><a class="item title" href="/Centos-scl/"><span class="title">Centos SCL源</span></a><a class="item title" href="/Redis-cluster/"><span class="title">Redis集群</span></a><a class="item title" href="/Java-annotation/"><span class="title">Java的注解</span></a><a class="item title" href="/java-hello-world/"><span class="title">Java的学习</span></a><a class="item title" href="/java-reflection/"><span class="title">Java的反射</span></a><a class="item title" href="/test-tech-1/"><span class="title">112334666</span></a><a class="item title" href="/112334/"><span class="title">112334</span></a></div></widget>
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024-09-23-Centos-scl_%E5%89%AF%E6%9C%AC3"><span class="title">Centos SCL源</span></a><a class="item title" href="/2024-09-26-Spring-boot-mysql"><span class="title">Spring boot 集成Mysql</span></a><a class="item title" href="/2024-09-26-Spring-boot-shardingsphere"><span class="title">Spring Boot Shardingsphere 分表</span></a><a class="item title" href="/2024-09-23-Centos-scl"><span class="title">Centos SCL源</span></a><a class="item title" href="/2024-09-23-Redis-cluster"><span class="title">Redis集群</span></a><a class="item title" href="/2024-09-23-Java-annotation"><span class="title">Java的注解</span></a><a class="item title" href="/2024-09-20-java-hello-world"><span class="title">Java的学习</span></a><a class="item title" href="/2024-09-21-java-reflection"><span class="title">Java的反射</span></a><a class="item title" href="/2024-09-19-test-tech-1"><span class="title">112334666</span></a><a class="item title" href="/2024-09-19-112334"><span class="title">112334</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -78,34 +78,45 @@
 <div class="article banner top">
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
-<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-09-20T07:36:00.000Z">2024-09-20</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-09-23T03:24:49.778Z">2024-09-23</time></span></div></div></div>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/centos/">centos</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-09-23T05:36:00.000Z">2024-09-23</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-09-30T10:03:05.084Z">2024-09-30</time></span></div></div></div>
     
     <div class="bottom only-title">
       
       <div class="text-area">
-        <h1 class="text title"><span>Java的学习</span></h1>
+        <h1 class="text title"><span>Centos SCL源</span></h1>
         
       </div>
     </div>
     
   </div>
-  </div><article class="md-text content"><blockquote>
-<p>Java并不算是一个好学的语言，感觉主要原因是：<br>    1. 思维的转变，比如面向对象；<br>    2. 配置复杂，虽然现在一些配置尽可能简单，对于初学者还是没有达到开箱即用的地步；<br>    3. 及时反馈，这点相对于一些前端语言，可以及时的看到效果；<br>    4. 扩展性强，导致要了解学习的内容过多。</p>
-</blockquote>
-<h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><p>Java和其它语言很大一个不同就是面向对象。理解类和对象基本就行了，比如人是一个类，具体张三是人这个类的对象，李四是人这类的另一个对象；动物是一个类，猫是动物的一个对象，狗是动物的另一个对象。 张三具有行走的方法，猫也具有行走的方法。 简单理解面向过程和面向对象的方式就是： 面向过程就是从第一行依次执行到最后一行； 面向对象是把现实问题抽象出来，把某一类定义为一个类，类具有它自己的方法。</p>
-<h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><p>很多语言都会有一些设计模式，或者说语言在设计的时候本来就有很多设计的模式在里面，只是感觉Java把这些凸显的更加明显。想要理解一些代码，掌握编程的思想，设计的模式是必不可少的。比如 <code>单例模式</code>、<code>工厂模式</code>、<code>接口适配器模式</code>、<code>策略模式</code> 等等。  </p>
-<p>这些模式没必要完全记住其概念，但是一定要熟悉了解，主要还是在于思维的转变，从平常日常生活思考问题的思维转变成编程思维。其实有时候很多设计模式在用，自己却浑然不知。</p>
-<h2 id="Java基础"><a href="#Java基础" class="headerlink" title="Java基础"></a>Java基础</h2><p>Java基础主要 <code>基本语法</code>、<code>基本数据结构</code>、<code>类</code>、<code>对象</code>、<code>接口</code>、<code>继承</code>、<code>多态</code> 等。然后就是一些框架的学习运用，解决问题的思路和方法。</p>
-<h2 id="Java进阶"><a href="#Java进阶" class="headerlink" title="Java进阶"></a>Java进阶</h2><p>进阶一些内容有<code>多线程</code>、<code>并发编程</code>、<code>反射</code>、<code>泛型</code>、<code>注解</code>、<code>web开发</code>、<code>Spring及Spring Boot</code>等。</p>
-<h2 id="Java高级"><a href="#Java高级" class="headerlink" title="Java高级"></a>Java高级</h2><p>进阶一些内容有<code>分布式</code>、<code>高并发处理</code>、<code>相关中间件学习（消息队列、缓存系统、数据库中间件、搜索引擎、RPC框架）</code>、<code>封装</code>、<code>异常处理</code>、<code>日志管理</code>、<code>系统平衡</code> 等等。</p>
-<pre><code>Java学习是一个长期持久的过程，每一段时间对于同样的问题都会有不同的见解；
-有很多个时候都会那种恍然大悟的感觉；另外一个感觉是完全学不完。
+  </div><article class="md-text content"><p>Centos用yum安装scl下报错，备忘一下更换源。</p>
+<pre><code>yum -y update
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+Could not retrieve mirrorlist http://mirrorlist.centos.org?arch=x86_64&amp;release=7&amp;repo=sclo-rh error was
+14: curl#6 - &quot;Could not resolve host: mirrorlist.centos.org; Unknown error&quot;
+</code></pre>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>CentOS7的SCL源在2024年6月30日停止维护了。 当scl源里面默认使用了centos官方的地址，无法连接，需要替换为其它源。</p>
+<h2 id="替换为阿里的源"><a href="#替换为阿里的源" class="headerlink" title="替换为阿里的源"></a>替换为阿里的源</h2><h3 id="重命名原来的文件："><a href="#重命名原来的文件：" class="headerlink" title="重命名原来的文件："></a>重命名原来的文件：</h3><p>目录 <code>/etc/yum.repos.d</code></p>
+<pre><code>mv CentOS-SCLo-scl.repo CentOS-SCLo-scl.repo-bak
+mv CentOS-SCLo-scl-rh.repo CentOS-SCLo-scl-rh.repo-bak
+</code></pre>
+<h3 id="创建新的源文件"><a href="#创建新的源文件" class="headerlink" title="创建新的源文件"></a>创建新的源文件</h3><pre><code>vim CentOS-SCLo-scl-rh.repo
+</code></pre>
+<h3 id="写入"><a href="#写入" class="headerlink" title="写入"></a>写入</h3><pre><code>[centos-sclo-rh]
+name=CentOS-7 - SCLo rh
+baseurl=https://mirrors.aliyun.com/centos/7/sclo/x86_64/rh/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
+</code></pre>
+<h2 id="改用新的源"><a href="#改用新的源" class="headerlink" title="改用新的源"></a>改用新的源</h2><pre><code>yum -y update
 </code></pre>
 
 
 </article>
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/java-reflection/">Java的反射</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/112334/">112334</a></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2024-09-23-Centos-scl">Centos SCL源</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024-09-23-Java-annotation">Java的注解</a></div></section></div>
 
 
 
@@ -116,7 +127,7 @@
 
 
 
-<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1"><span class="toc-text">面向对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F"><span class="toc-text">设计模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E5%9F%BA%E7%A1%80"><span class="toc-text">Java基础</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E8%BF%9B%E9%98%B6"><span class="toc-text">Java进阶</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E9%AB%98%E7%BA%A7"><span class="toc-text">Java高级</span></a></li></ol></div><div class="widget-footer">
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E5%9B%A0"><span class="toc-text">原因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%BF%E6%8D%A2%E4%B8%BA%E9%98%BF%E9%87%8C%E7%9A%84%E6%BA%90"><span class="toc-text">替换为阿里的源</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%91%BD%E5%90%8D%E5%8E%9F%E6%9D%A5%E7%9A%84%E6%96%87%E4%BB%B6%EF%BC%9A"><span class="toc-text">重命名原来的文件：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%B0%E7%9A%84%E6%BA%90%E6%96%87%E4%BB%B6"><span class="toc-text">创建新的源文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%99%E5%85%A5"><span class="toc-text">写入</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%94%B9%E7%94%A8%E6%96%B0%E7%9A%84%E6%BA%90"><span class="toc-text">改用新的源</span></a></li></ol></div><div class="widget-footer">
 
 <a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a></div></widget>
 </div></aside><div class='float-panel blur'>
